@@ -1,0 +1,7 @@
+# Teste local antes do deploy: docker compose up --build
+services:
+  web:
+    build: .
+    ports:
+      - '8080:80'
+    restart: unless-stopped
