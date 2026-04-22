@@ -995,6 +995,12 @@ h3 {
   box-shadow: 0 22px 60px rgba(34, 197, 94, 0.45);
 }
 
+.wa-float__icon {
+  display: block;
+  color: #fff;
+  shape-rendering: geometricPrecision;
+}
+
 /* Reveal */
 .reveal {
   opacity: 0;

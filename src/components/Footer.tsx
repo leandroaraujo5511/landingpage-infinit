@@ -1,4 +1,5 @@
 import { COMPANY_CNPJ, COMPANY_LEGAL_NAME, CONTACT_EMAIL, SOCIAL, whatsappLink } from '../constants'
+import { WhatsAppIcon } from './icons/WhatsAppIcon'
 
 function SocialIcon({ name }: { name: 'in' | 'ig' | 'wa' }) {
   if (name === 'in') {
@@ -21,14 +22,7 @@ function SocialIcon({ name }: { name: 'in' | 'ig' | 'wa' }) {
       </svg>
     )
   }
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="social-icon">
-      <path
-        fill="currentColor"
-        d="M20.5 12.2c0 1.7-.4 3-1.2 4.1-.9 1.3-2.2 2-3.8 2.2-1.1.1-4.5.1-5.6 0-1.6-.2-2.9-.9-3.8-2.2-.8-1.1-1.2-2.4-1.2-4.1 0-1.8.4-3.1 1.3-4.2.9-1.2 2.2-1.9 3.7-2.1 1-.1 4.4-.1 5.5 0 1.6.2 2.9.9 3.8 2.1.9 1.1 1.3 2.4 1.3 4.2zM12 9.3a2.7 2.7 0 100 5.4 2.7 2.7 0 000-5.4zm4.9-2.6a.6.6 0 10-1.2 0 .6.6 0 001.2 0z"
-      />
-    </svg>
-  )
+  return <WhatsAppIcon className="social-icon" size={20} />
 }
 
 export function Footer() {
